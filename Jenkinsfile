@@ -37,7 +37,7 @@ spec:
         stage('Running collection') {
             steps {
                 //sh 'postman collection run -e ${POSTMAN_ENVIRONMENT_ID} ${POSTMAN_COLLECTION_ID} --integration-id "145246-${JOB_NAME}${BUILD_NUMBER}" --color off --disable-unicode | sed -E "s/\\033[.*m//g"'
-                sh 'postman collection run -e ${POSTMAN_ENVIRONMENT_ID} ${POSTMAN_COLLECTION_ID} --integration-id "145246-${JOB_NAME}${BUILD_NUMBER}" --color off'
+                sh 'postman collection run -e ${POSTMAN_ENVIRONMENT_ID} ${POSTMAN_COLLECTION_ID} --integration-id "145246-Contract Tests via Github43" --color off'
             }
         }
     }
